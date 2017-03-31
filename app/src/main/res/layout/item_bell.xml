@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_bell_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="时间"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/tv_bell_item"
+        android:layout_alignBottom="@+id/tv_bell_item"
+        android:layout_toStartOf="@+id/cb_bell"/>
+
+    <CheckBox
+        android:id="@+id/cb_bell"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_bell"
+        android:button="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>
